@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AskPupkin</title>
+    <link href="../static/bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <div>
+                <img src="../static/img/logo.png" alt="logo" style="max-width: 75px; max-height: 75px;">
+                <a class="navbar-brand fs-3" href="index.html">AskPupkin</a>
+            </div>  
+            <div class="d-flex">
+                <form class="d-flex me-2" role="search" onsubmit="return false;">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <a class="btn btn-outline-success my-auto" href="question.html">Ask</a>
+            </div>
+    
+            <div class="d-flex gap-2 align-items-center">
+                <div>
+                    <img src="../static/img/avatar.png" class="" alt="avatar" style="max-width: 50px; max-height: 50px;">
+                </div>
+                <div class="content">
+                    <div class="content__name">Dr. Pepper</div>
+                    <div class="content__links">
+                        <a href="profile.html">Settings</a>
+                        <a href="login.html">Log out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container mt-4">
+        <div class="row">
+            <section class="col-md-9">
+            </section>
+
+            <aside class="col-md-3">
+                <section class="mb-3">
+                    <h3>Popular tags</h3>
+                    <div class="d-flex flex-wrap gap-1">
+                        <span class="badge rounded-pill text-bg-primary"><a class="text-bg-primary text-decoration-none" href="lisiting_questions_by_tag.html">perl</a></span>
+                        <span class="badge rounded-pill text-bg-primary">python</span>
+                        <span class="badge rounded-pill text-bg-secondary">TechnoPark</span>
+                        <span class="badge rounded-pill text-bg-success">MySQL</span>
+                        <span class="badge rounded-pill text-bg-primary">django</span>
+                        <span class="badge rounded-pill text-bg-danger">Mail.Ru</span>
+                        <span class="badge rounded-pill text-bg-warning">Voloshin</span>
+                        <span class="badge rounded-pill text-bg-info">Firefox</span>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Best members</h3>
+                    <div>
+                        <a class="d-block" href="#">Mr. Freeman</a>
+                        <a class="d-block" href="#">Dr. House</a>
+                        <a class="d-block" href="#">Bender</a>
+                        <a class="d-block" href="#">Queen Victoria</a>
+                        <a class="d-block" href="#">V. Pupkin</a>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+    
+    <footer class="bg-black py-3 text-white-50 fixed-bottom">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 AskPupkin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../static/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
