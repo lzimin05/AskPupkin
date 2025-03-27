@@ -8,8 +8,8 @@
     <link href="../static/bootstrap/css/bootstrap.css" rel="stylesheet" />
 </head>
 
-<body class="d-flex flex-column h-100">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body class="d-flex flex-column" style="height: 100vh">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="flex: 0 1 auto">
         <div class="container">
             <div>
                 <img src="../static/img/logo.png" alt="logo" style="max-width: 75px; max-height: 75px;">
@@ -37,9 +37,9 @@
         </div>
     </nav>
 
-    <main class="container mt-2">
+    <main class="container mt-2" style="flex: 1 1 auto">
         <div class="row">
-            <section class="col vh-100">
+            <section class="col">
                 <div class="d-flex align-items-center gap-2 mb-4">
                     <h1>New Questions</h1>
                     <a href="#">Hot Questions</a>
@@ -50,17 +50,15 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-2">
-                                    <div style="height: 150px; width: 150px;" class="border mb-2">
-                                        <img src="../static/img/question1.png" alt="img" class="img-fluid" style="max-width: 150px; max-height: 150px;">
+                                    <div class="border mb-2">
+                                        <img src="../static/img/question1.png" alt="img" class="img-fluid" style="max-width: 100%; max-height: 100%;">
                                     </div>
                                     <div class="d-flex flex-lg-row justify-content-between w-100">
                                         <input type="radio" class="btn-check" name="options-outlined-1" id="success-outlined-1" autocomplete="off">
-                                        <label class="btn btn-outline-success" for="success-outlined-1">&#x1F44D;</label>
+                                        <label class="btn btn-outline-success" for="success-outlined-1">&#x1F44D; 3</label>
 
                                         <input type="radio" class="btn-check" name="options-outlined-1" id="danger-outlined-1" autocomplete="off">
-                                        <label class="btn btn-outline-danger" for="danger-outlined-1">&#x1F44E;</label>
-
-                                        <p class="mt-auto mb-auto">5</p>
+                                        <label class="btn btn-outline-danger" for="danger-outlined-1">&#x1F44E; 5</label>
                                     </div>
                                 </div>
                                 <div class="col d-flex flex-column justify-content-between">
@@ -91,17 +89,15 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-2">
-                                    <div style="height: 150px; width: 150px;" class="border mb-2">
-                                        <img src="../static/img/question1.png" alt="img" class="img-fluid" style="max-width: 150px; max-height: 150px;">
+                                    <div class="border mb-2">
+                                        <img src="../static/img/question1.png" alt="img" class="img-fluid" style="max-width: 100%; max-height: 100%;">
                                     </div>
                                     <div class="d-flex flex-lg-row justify-content-between w-100">
                                         <input type="radio" class="btn-check" name="options-outlined-2" id="success-outlined-2" autocomplete="off">
-                                        <label class="btn btn-outline-success" for="success-outlined-2">&#x1F44D;</label>
+                                        <label class="btn btn-outline-success" for="success-outlined-2">&#x1F44D; 3</label>
 
                                         <input type="radio" class="btn-check" name="options-outlined-2" id="danger-outlined-2" autocomplete="off">
-                                        <label class="btn btn-outline-danger" for="danger-outlined-2">&#x1F44E;</label>
-
-                                        <p class="mt-auto mb-auto">5</p>
+                                        <label class="btn btn-outline-danger" for="danger-outlined-2">&#x1F44E; 5</label>
                                     </div>
                                 </div>
                                 <div class="col d-flex flex-column justify-content-between">
@@ -132,17 +128,15 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-2">
-                                    <div style="height: 150px; width: 150px;" class="border mb-2">
-                                        <img src="../static/img/question1.png" alt="img" class="img-fluid" style="max-width: 150px; max-height: 150px;">
+                                    <div class="border mb-2">
+                                        <img src="../static/img/question1.png" alt="img" class="img-fluid" style="max-width: 100%; max-height: 100%;">
                                     </div>
                                     <div class="d-flex flex-lg-row justify-content-between w-100">
                                         <input type="radio" class="btn-check" name="options-outlined-3" id="success-outlined-3" autocomplete="off">
-                                        <label class="btn btn-outline-success" for="success-outlined-3">&#x1F44D;</label>
+                                        <label class="btn btn-outline-success" for="success-outlined-3">&#x1F44D; 3</label>
 
                                         <input type="radio" class="btn-check" name="options-outlined-3" id="danger-outlined-3" autocomplete="off">
-                                        <label class="btn btn-outline-danger" for="danger-outlined-3">&#x1F44E;</label>
-
-                                        <p class="mt-auto mb-auto">5</p>
+                                        <label class="btn btn-outline-danger" for="danger-outlined-3">&#x1F44E; 5</label>
                                     </div>
                                 </div>
                                 <div class="col d-flex flex-column justify-content-between">
@@ -210,7 +204,7 @@
         </div>
     </main>
 
-    <footer class="bg-black py-3 mt-auto text-white-50">
+    <footer class="bg-black py-3 mt-auto text-white-50" style="flex: 0 1 auto"> 
         <div class="container text-center">
             <p class="mb-0">© 2025 AskPupkin. All rights reserved.</p>
         </div>
