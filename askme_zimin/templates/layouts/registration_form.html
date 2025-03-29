@@ -1,0 +1,77 @@
+<form class="needs-validation mt-3" novalidate>
+    <div class="row mb-4">
+        <h3>Registration</h3>
+    </div>
+    <div>
+        <div class="row mb-3">
+            <label for="inputLogin" class="col-sm-3 col-form-label form-label">Login</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputLogin" required minlength="5" maxlength="20">
+                <div class="invalid-feedback">
+                    Please fulfill the condition below:
+                </div>
+                <small class="form-text text-muted">Login must be between 5 and 20 characters!</small>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputEmail" class="col-sm-3 col-form-label">Email</label>
+            <div class="col-sm-9">
+                <input type="email" class="form-control" id="inputEmail" required minlength="5" maxlength="50">
+                <div class="invalid-feedback">
+                    Please fulfill the condition below:
+                </div>
+                <small class="form-text text-muted">Email must be between 5 and 50 characters!</small>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputNickname" class="col-sm-3 col-form-label">NickName</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputNickname" required minlength="5" maxlength="20">
+                <div class="invalid-feedback">
+                    Please fulfill the condition below:
+                </div>
+                <small class="form-text text-muted">NickName must be between 5 and 20 characters!</small>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
+            <div class="col-sm-9">
+                <input type="password" class="form-control" id="inputPassword" required minlength="8" maxlength="40">
+                <div class="invalid-feedback">
+                    Please fulfill the condition below:
+                </div>
+                <small class="form-text text-muted">Password must be between 8 and 40 characters!</small>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="inputPasswordRepeat" class="col-sm-3 col-form-label">Repeat password</label>
+            <div class="col-sm-9">
+                <input type="password" class="form-control" id="inputPasswordRepeat" required minlength="8" maxlength="40">
+                <div class="invalid-feedback">
+                    Passwords must match!
+                </div>
+                <small class="form-text text-muted">Repeat your password</small>
+            </div>
+        </div>
+        
+        <div class="row mb-3">
+            <label class="col-sm-3 col-form-label">Avatar</label>
+            <div class="col-sm-9">
+                <div class="input-group">
+                    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                    <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Choose</button>
+                </div>
+                <small class="form-text text-muted">Optional profile picture</small>
+            </div>
+        </div>
+        
+        <div class="row mb-3">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-9">
+                <button type="submit" class="btn btn-primary">Register!</button>
+            </div>
+        </div>
+    </div>
+</form>

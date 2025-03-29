@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="d-flex gap-3 align-items-center">
+        <h1>{{question.title}}</h1>
+    </div>
+    <articles class="d-flex gap-3 flex-column mb-3 pb-3 mb-2 single">
+        {% include 'layouts/question.html' %}
+    </articles>
+    {% for answer in answers %}
+        {% include 'layouts/answer.html'%}
+    {% endfor %}
+    {% include 'layouts/new_answer_form.html' %}
+    {% include 'layouts/pagination.html' %}
+{% endblock %}

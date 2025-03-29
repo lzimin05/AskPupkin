@@ -1,0 +1,31 @@
+<section class="mb-3 mt-2">
+    <h1>New Question</h1>
+    <form class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label for="titleInput" class="form-label">Title</label>
+            <input type="text" class="form-control form-control-lg" id="titleInput" placeholder="How to build a moon park?" required minlength="10" maxlength="100">
+            <div class="invalid-feedback">
+                Please fulfill the condition below:
+            </div>
+            <h class="ms-3 text-black-50">Title must be between 10 and 100 characters!</h>
+        </div>
+        <div class="mb-3">
+            <label for="textArea" class="form-label">Text</label>
+            <textarea class="form-control" id="textArea" rows="5" placeholder="Really, how? Have no idea about it" required minlength="50" maxlength="2000"></textarea>
+            
+            <div class="invalid-feedback">
+                Please fulfill the condition below:
+            </div>
+            <h class="ms-3 text-black-50">Text must be between 50 and 2000 characters!</h>
+        </div>
+        <div class="mb-3">
+            <label for="tagsInput" class="form-label">Tags</label>
+            <input type="text" class="form-control form-control-lg" id="tagsInput" placeholder="moon, park, puzzle" required minlength="1">
+            <div class="invalid-feedback">
+                Please fulfill the condition below:
+            </div>
+            <h class="ms-3 text-black-50">Please provide at least one tag!</h>
+        </div>
+        <button class="btn btn-primary" type="submit">ASK!</button>
+    </form>
+</section>
