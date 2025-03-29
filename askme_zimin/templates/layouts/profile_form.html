@@ -1,0 +1,50 @@
+{% load static %}
+<section class="d-flex justify-content-center col-md-12">
+    <form class="needs-validation w-50" novalidate>
+        <div>
+            <h3>Settings: Dr. Pepper</h3>
+        </div>
+        <div>
+            <div class="row mb-3">
+                <label for="inputLogin" class="col-sm-2 col-form-label form-label">Login</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputLogin" value="dr_pepper" required minlength="5" maxlength="20">
+                    <div class="invalid-feedback">
+                        Login must be between 5 and 20 characters!
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail" value="dr.pepper@mail.ru" required minlength="5" maxlength="50">
+                    <div class="invalid-feedback">
+                        Email must be between 5 and 50 characters!
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputNickname" class="col-sm-2 col-form-label">NickName</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputNickname" value="Dr. Pepper" required minlength="5" maxlength="20">
+                    <div class="invalid-feedback">
+                        NickName must be between 5 and 20 characters!
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3 d-flex justify-content-start">
+                <h class="mt-auto mb-auto me-5">Upload avatar</h>
+                <div>
+                    <img src="{% static '/img/avatar.png' %}" class="img-thumbnail" alt="avatar" style="max-width: 250px; max-height: 250px;">
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">choose</button>
+            </div>
+            <div class="justify-content-start d-flex mb-3">
+                <button type="submit" class="btn btn-primary w-25">Save</button>
+            </div>
+        </div>
+    </form>
+</section>

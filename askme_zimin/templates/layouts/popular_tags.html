@@ -1,0 +1,31 @@
+{% load static %}
+
+<section class="mb-3">
+    <h3>Popular tags</h3>
+    <div class="d-flex flex-wrap gap-1">
+        <span class="badge rounded-pill text-bg-primary">
+            <a class="text-white text-decoration-none" href="{% url 'tag' tag='perl' %}">perl</a>
+        </span>
+        <span class="badge rounded-pill text-bg-primary">
+            <a class="text-white text-decoration-none" href="{% url 'tag' tag='python' %}">python</a>
+        </span>
+        <span class="badge rounded-pill text-bg-secondary">
+            <a class="text-white text-decoration-none" href="{% url 'tag' tag='TechnoPark' %}">TechnoPark</a>
+        </span>
+        <span class="badge rounded-pill text-bg-success">
+            <a class="text-white text-decoration-none" href="{% url 'tag' tag='MySQL' %}">MySQL</a>
+        </span>
+        <span class="badge rounded-pill text-bg-primary">
+            <a class="text-white text-decoration-none" href="{% url 'tag' tag='django' %}">django</a>
+        </span>
+        <span class="badge rounded-pill text-bg-danger">
+            <a class="text-white text-decoration-none" href="{% url 'tag' tag='Mail.Ru' %}">Mail.Ru</a>
+        </span>
+        <span class="badge rounded-pill text-bg-warning">
+            <a class="text-dark text-decoration-none" href="{% url 'tag' tag='Voloshin' %}">Voloshin</a>
+        </span>
+        <span class="badge rounded-pill text-bg-info">
+            <a class="text-white text-decoration-none" href="{% url 'tag' tag='Firefox' %}">Firefox</a>
+        </span>
+    </div>
+</section>

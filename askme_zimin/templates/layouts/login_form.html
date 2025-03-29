@@ -1,0 +1,37 @@
+<form class="needs-validation mt-3" novalidate>
+    <div class="row mb-4">
+        <h3>Log In</h3>
+    </div>
+    <div>
+        <div class="row mb-3">
+            <label for="inputLogin" class="col-sm-3 col-form-label form-label">Login</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputLogin" required minlength="5" maxlength="20">
+                <div class="invalid-feedback">
+                    Please fulfill the condition below:
+                </div>
+                <small class="form-text text-muted">Login must be between 5 and 20 characters!</small>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
+            <div class="col-sm-9">
+                <input type="password" class="form-control" id="inputPassword" required minlength="8" maxlength="40">
+                <div class="invalid-feedback">
+                    Please fulfill the condition below:
+                </div>
+                <small class="form-text text-muted">Password must be between 8 and 40 characters!</small>
+            </div>
+        </div>
+        
+        <div class="row mb-3">
+            <section class="col-sm-3"></section>
+            <button type="submit" class="btn btn-primary col-sm-9 ms-3" style="width:100px">Log in!</button>
+        </div>
+        <div class="row mb-3">
+            <section class="col-sm-3"></section>
+            <a class="col-sm-9" href="{% url "signup" %}">create a new account</a>
+        </div>
+    </div>
+</form>
