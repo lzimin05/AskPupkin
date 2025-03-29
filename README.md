@@ -1,2 +1,3 @@
-#public - DZ1
-#askme_zimin - DZ2
+### `public` – Домашнее задание 1 (DZ1)  
+
+### `askme_zimin` – Домашнее задание 2 (DZ2)  
